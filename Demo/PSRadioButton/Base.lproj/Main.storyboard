@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="3og-pM-ACs">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--PSRadioButton-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PSRadioButton" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wkv-tu-pHx">
+                                <rect key="frame" x="81" y="498" width="159" height="30"/>
+                                <state key="normal" title="Objective-C Demo One"/>
+                                <connections>
+                                    <segue destination="NT8-p4-73O" kind="show" id="I5g-e5-ZPp"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="性别" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yGd-G8-XgH">
+                                <rect key="frame" x="16" y="122" width="34" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="男" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ThD-EH-sS3">
+                                <rect key="frame" x="219" y="123" width="17" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="女" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eey-nm-0hQ">
+                                <rect key="frame" x="277" y="124" width="17" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eUc-5F-Ygc" customClass="PSRadioButton" customModule="PSRadioButton" customModuleProvider="target">
+                                <rect key="frame" x="195" y="111" width="54" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="4fr-aL-Xv7"/>
+                                    <constraint firstAttribute="width" constant="54" id="Mgc-H3-X0i"/>
+                                </constraints>
+                                <state key="normal" image="seleted"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="selectedImage" value="seleted"/>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="deSelectedImage" value="de seleted"/>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="deselectedImage" value="deseleted"/>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aiA-46-BL3" customClass="PSRadioButton" customModule="PSRadioButton" customModuleProvider="target">
+                                <rect key="frame" x="255" y="112" width="52" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="eRV-qW-iA2"/>
+                                    <constraint firstAttribute="width" constant="52" id="hTp-jp-KGn"/>
+                                </constraints>
+                                <state key="normal" image="seleted"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="selectedImage" value="seleted"/>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="deSelectedImage" value="de seleted"/>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="deselectedImage" value="deseleted"/>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cQY-Yl-ecU">
+                                <rect key="frame" x="81" y="448" width="159" height="30"/>
+                                <state key="normal" title="Objective-C Demo Two"/>
+                                <connections>
+                                    <segue destination="0nW-Rb-Xlq" kind="show" id="MID-lw-SLJ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="cQY-Yl-ecU" firstAttribute="leading" secondItem="wkv-tu-pHx" secondAttribute="leading" id="2AY-zt-Aqa"/>
+                            <constraint firstItem="eey-nm-0hQ" firstAttribute="leading" secondItem="aiA-46-BL3" secondAttribute="trailing" constant="15" id="2Nd-Av-5UT"/>
+                            <constraint firstItem="wkv-tu-pHx" firstAttribute="top" secondItem="cQY-Yl-ecU" secondAttribute="bottom" constant="20" id="3Re-De-f9E"/>
+                            <constraint firstItem="ThD-EH-sS3" firstAttribute="leading" secondItem="eUc-5F-Ygc" secondAttribute="trailing" constant="-30" id="9yZ-p3-WJb"/>
+                            <constraint firstItem="cQY-Yl-ecU" firstAttribute="trailing" secondItem="wkv-tu-pHx" secondAttribute="trailing" id="Bkq-Uk-bFE"/>
+                            <constraint firstItem="yGd-G8-XgH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Jjx-Yg-Wob"/>
+                            <constraint firstItem="ThD-EH-sS3" firstAttribute="centerY" secondItem="aiA-46-BL3" secondAttribute="centerY" id="MRn-Py-c9U"/>
+                            <constraint firstItem="eey-nm-0hQ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="60" id="RnT-kA-ll9"/>
+                            <constraint firstItem="wkv-tu-pHx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SVN-aJ-Ise"/>
+                            <constraint firstItem="aiA-46-BL3" firstAttribute="leading" secondItem="ThD-EH-sS3" secondAttribute="trailing" constant="19" id="XPM-3J-ZIP"/>
+                            <constraint firstItem="eey-nm-0hQ" firstAttribute="leading" secondItem="aiA-46-BL3" secondAttribute="trailing" constant="-30" id="bqh-zM-Vdf"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="eey-nm-0hQ" secondAttribute="trailing" constant="10" id="hyy-Xw-hj8"/>
+                            <constraint firstItem="yGd-G8-XgH" firstAttribute="centerY" secondItem="eUc-5F-Ygc" secondAttribute="centerY" id="mdV-FY-WRO"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="wkv-tu-pHx" secondAttribute="bottom" constant="40" id="n0b-BW-ZwB"/>
+                            <constraint firstItem="aiA-46-BL3" firstAttribute="centerY" secondItem="eey-nm-0hQ" secondAttribute="centerY" id="sKR-OP-QZT"/>
+                            <constraint firstItem="eUc-5F-Ygc" firstAttribute="centerY" secondItem="ThD-EH-sS3" secondAttribute="centerY" id="zju-KH-YWL"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="2Nd-Av-5UT"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" title="PSRadioButton" id="exZ-d2-4QV"/>
+                    <connections>
+                        <outlet property="tipsLabel" destination="yGd-G8-XgH" id="xf0-oe-ET1"/>
+                        <outletCollection property="radioButtons" destination="aiA-46-BL3" collectionClass="NSMutableArray" id="JMH-4P-1tW"/>
+                        <outletCollection property="radioButtons" destination="eUc-5F-Ygc" collectionClass="NSMutableArray" id="tls-Pf-mne"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1117" y="322"/>
+        </scene>
+        <!--PSRadioButton-->
+        <scene sceneID="trQ-iN-U7H">
+            <objects>
+                <viewController id="NT8-p4-73O" customClass="PSDemoOneViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="og5-C7-mrD"/>
+                        <viewControllerLayoutGuide type="bottom" id="7DS-u3-r8f"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="aHp-ze-bZD">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="PSRadioButton" id="ETq-Jj-Ze2"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3KI-PI-2M5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1500" y="322"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="s0n-E3-c9q">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="3og-pM-ACs" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Yof-0u-j44">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="bnp-47-fbv"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zs3-Ms-QiK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="677" y="322"/>
+        </scene>
+        <!--PSRadioButton-->
+        <scene sceneID="1io-Qc-uge">
+            <objects>
+                <viewController id="0nW-Rb-Xlq" customClass="PSDemoTwoViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2HX-OZ-nrJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="WS5-Ni-C1s"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Pka-X4-YBM">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="性别" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eQO-hg-Ss7">
+                                <rect key="frame" x="16" y="122" width="34" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="男" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SWW-5B-vEN">
+                                <rect key="frame" x="219" y="123" width="17" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="女" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5qf-U5-b45">
+                                <rect key="frame" x="277" y="124" width="17" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zsX-bQ-6mt" customClass="PSRadioButton" customModule="PSRadioButton" customModuleProvider="target">
+                                <rect key="frame" x="195" y="111" width="54" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="lAj-6u-oiw"/>
+                                    <constraint firstAttribute="width" constant="54" id="tMf-P0-fAS"/>
+                                </constraints>
+                                <state key="normal" image="seleted"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="selectedImage" value="seleted"/>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="deSelectedImage" value="de seleted"/>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="deselectedImage" value="deseleted"/>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aTR-Af-JAM" customClass="PSRadioButton" customModule="PSRadioButton" customModuleProvider="target">
+                                <rect key="frame" x="255" y="112" width="52" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="hE8-vB-lVP"/>
+                                    <constraint firstAttribute="width" constant="52" id="hdh-gp-V9o"/>
+                                </constraints>
+                                <state key="normal" image="seleted"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="selectedImage" value="seleted"/>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="deSelectedImage" value="de seleted"/>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="deselectedImage" value="deseleted"/>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="SWW-5B-vEN" firstAttribute="leading" secondItem="zsX-bQ-6mt" secondAttribute="trailing" constant="-30" id="KEt-ge-p8C"/>
+                            <constraint firstItem="zsX-bQ-6mt" firstAttribute="centerY" secondItem="SWW-5B-vEN" secondAttribute="centerY" id="KMk-Mw-xyp"/>
+                            <constraint firstItem="5qf-U5-b45" firstAttribute="leading" secondItem="aTR-Af-JAM" secondAttribute="trailing" constant="-30" id="KbS-Hl-OZC"/>
+                            <constraint firstItem="5qf-U5-b45" firstAttribute="leading" secondItem="aTR-Af-JAM" secondAttribute="trailing" constant="15" id="LyG-1N-A0M"/>
+                            <constraint firstItem="5qf-U5-b45" firstAttribute="top" secondItem="2HX-OZ-nrJ" secondAttribute="bottom" constant="60" id="dG3-3B-6KP"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="5qf-U5-b45" secondAttribute="trailing" constant="10" id="ee3-e7-yXD"/>
+                            <constraint firstItem="SWW-5B-vEN" firstAttribute="centerY" secondItem="aTR-Af-JAM" secondAttribute="centerY" id="jLj-ve-pC5"/>
+                            <constraint firstItem="aTR-Af-JAM" firstAttribute="centerY" secondItem="5qf-U5-b45" secondAttribute="centerY" id="kh3-Q6-ebF"/>
+                            <constraint firstItem="eQO-hg-Ss7" firstAttribute="leading" secondItem="Pka-X4-YBM" secondAttribute="leadingMargin" id="sF0-ma-KmV"/>
+                            <constraint firstItem="eQO-hg-Ss7" firstAttribute="centerY" secondItem="zsX-bQ-6mt" secondAttribute="centerY" id="tyy-2H-CeL"/>
+                            <constraint firstItem="aTR-Af-JAM" firstAttribute="leading" secondItem="SWW-5B-vEN" secondAttribute="trailing" constant="19" id="xOy-AK-aFa"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="LyG-1N-A0M"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" title="PSRadioButton" id="jzK-9j-xHi"/>
+                    <connections>
+                        <outlet property="tipsLabel" destination="eQO-hg-Ss7" id="be6-l2-Ctz"/>
+                        <outletCollection property="radioButtons" destination="aTR-Af-JAM" id="yXb-89-v1f"/>
+                        <outletCollection property="radioButtons" destination="zsX-bQ-6mt" id="LBC-YV-Ezz"/>
+                        <outletCollection property="radioButtons" destination="aTR-Af-JAM" id="EP5-9d-6sS"/>
+                        <outletCollection property="radioButtons" destination="zsX-bQ-6mt" id="jLY-F0-qho"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cQg-qQ-kwA" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1117" y="1021"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="de seleted" width="20" height="20"/>
+        <image name="deseleted" width="20" height="20"/>
+        <image name="seleted" width="20" height="20"/>
+    </resources>
+</document>
