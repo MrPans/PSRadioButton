@@ -77,7 +77,7 @@ import UIKit
         super.init()
         
         for button in self.radioButtons {
-            button.addTarget(self, action: "touchRadioButton:", forControlEvents: .TouchUpInside)
+            button.addTarget(self, action: #selector(PSRadioGroup.touchRadioButton(_:)), forControlEvents: .TouchUpInside)
         }
     }
     

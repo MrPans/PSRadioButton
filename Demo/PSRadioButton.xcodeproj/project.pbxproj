@@ -143,6 +143,7 @@
 				TargetAttributes = {
 					3BFA7BAE1C9AD080009F91C5 = {
 						CreatedOnToolsVersion = 7.2.1;
+						LastSwiftMigration = 0800;
 					};
 				};
 			};
@@ -304,6 +305,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "PSRadioButton/PSRadioButton-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -317,6 +319,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = net.shengpan.PSRadioButton;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "PSRadioButton/PSRadioButton-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
