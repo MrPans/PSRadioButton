@@ -12,18 +12,18 @@ import UIKit
     
     @IBInspectable public var selectedImage: UIImage? {
         didSet {
-            self.setImage(selectedImage, forState: .Selected)
+            setImage(selectedImage, for: .selected)
         }
     }
     @IBInspectable public var deselectedImage: UIImage? {
         didSet {
-            self.setImage(deselectedImage, forState: .Normal)
+            setImage(deselectedImage, for: .normal)
         }
     }
     
-    override public var selected: Bool {
+    override public var isSelected: Bool {
         didSet {
-            if selected {
+            if isSelected {
                 action?(self)
             }
         }
@@ -32,7 +32,7 @@ import UIKit
     private var action: ((PSRadioButton) -> Void)?
     
     // Conveniently creat a set of PSRadioButton which tag = index
-    public class func radioButtons(repeatCount repeatCount: Int, selectedImage: UIImage, deselectedImage: UIImage) -> [PSRadioButton] {
+    public class func radioButtons(repeatCount: Int, selectedImage: UIImage, deselectedImage: UIImage) -> [PSRadioButton] {
         if repeatCount < 0 {
             return [PSRadioButton]()
         }
@@ -49,18 +49,18 @@ import UIKit
     
     public required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-        assert(self.buttonType == .Custom, "PSRadioButton:\(self) type is not UIButtonType.Custom /r Please set buttonType to \r UIButtonType.Custom in your Storyboard Or Xib file,otherwise the button appearance will be odd")
+        assert(self.buttonType == .custom, "PSRadioButton:\(self) type is not UIButton.UIButtonType.custom /r Please set buttonType to \r UIButtonType.custom in your Storyboard Or Xib file,otherwise the button appearance will be odd")
     }
     
     public override init(frame: CGRect) {
         super.init(frame: frame)
     }
     
-    public convenience init(type buttonType: UIButtonType) {
+    public convenience init(type buttonType: UIButton.ButtonType) {
         self.init(frame: CGRectZero)
     }
     
-    public convenience init(action: (PSRadioButton) -> Void) {
+    public convenience init(action: @escaping (PSRadioButton) -> Void) {
         self.init(frame: CGRectZero)
         self.action = action
     }
@@ -77,19 +77,19 @@ import UIKit
         super.init()
         
         for button in self.radioButtons {
-            button.addTarget(self, action: "touchRadioButton:", forControlEvents: .TouchUpInside)
+            button.addTarget(self, action: #selector(touchRadioButton(_:)), for: .touchUpInside)
         }
     }
     
-    func touchRadioButton(sender: PSRadioButton) {
-        selectedButton?.selected = false
-        sender.selected = true;
+    @objc private func touchRadioButton(_ sender: PSRadioButton) {
+        selectedButton?.isSelected = false
+        sender.isSelected = true;
         selectedButton = sender
-        delegate?.radioGroup(self, didSeletedRadioButotn: sender)
+        delegate?.radioGroup(self, didSelected: sender)
     }
     
 }
 
 @objc public protocol PSRadioGroupDelegate: NSObjectProtocol {
-    func radioGroup(radioGroup: PSRadioGroup, didSeletedRadioButotn radioButton: PSRadioButton)
+    func radioGroup(_ radioGroup: PSRadioGroup, didSelected radioButton: PSRadioButton)
 }
